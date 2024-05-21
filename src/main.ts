@@ -3,6 +3,8 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 // import { setupCounter } from './counter.ts'
 import {rdmNumber} from './rdm.ts'
+import { test,test2,test3 } from './testing.ts'
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -23,3 +25,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 rdmNumber(document.querySelector<HTMLButtonElement>('#counter')!)
+
+test()
+test2(2,3)
+test3({dividend:10,divisor:2})
